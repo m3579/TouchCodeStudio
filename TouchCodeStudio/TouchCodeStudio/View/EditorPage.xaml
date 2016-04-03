@@ -1,6 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TouchCodeStudio.EditorPage">
-  <Label Text="Hello" VerticalOptions="Center" HorizontalOptions="Center" />
+             x:Class="TouchCodeStudio.View.EditorPage">
+  <Editor x:Name="editor">
+    <Editor.FontFamily>
+      <OnPlatform x:TypeArguments="x:String">
+        <OnPlatform.iOS>Consolas</OnPlatform.iOS>
+        <OnPlatform.Android>Consolas</OnPlatform.Android>
+        <OnPlatform.WinPhone>Consolas</OnPlatform.WinPhone>
+      </OnPlatform>
+    </Editor.FontFamily>
+  </Editor>
 </ContentPage>

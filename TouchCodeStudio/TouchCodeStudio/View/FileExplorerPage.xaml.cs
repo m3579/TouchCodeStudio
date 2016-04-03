@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace TouchCodeStudio
+namespace TouchCodeStudio.View
 {
     public partial class FileExplorerPage : ContentPage
     {
@@ -15,8 +15,6 @@ namespace TouchCodeStudio
         public FileExplorerPage()
         {
             InitializeComponent();
-
-            
         }
     }
 }

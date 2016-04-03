@@ -2,19 +2,15 @@
 <MasterDetailPage
   xmlns="http://xamarin.com/schemas/2014/forms"
   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-  xmlns:local="clr-namespace:TouchCodeStudio;assembly=TouchCodeStudio"       
-  x:Class="TouchCodeStudio.MainPageXaml">
+  xmlns:local="clr-namespace:TouchCodeStudio.View;assembly=TouchCodeStudio.View"       
+  x:Class="TouchCodeStudio.View.MainPageXaml">
   
   <MasterDetailPage.Master>
     <local:FileExplorerPage x:Name="fileExplorerPage" />  
   </MasterDetailPage.Master>
   
   <MasterDetailPage.Detail>
-    <NavigationPage>
-      <x:Arguments>
-        <local:EditorPage />
-      </x:Arguments>
-    </NavigationPage>
+    <local:EditorPage Title="Code Editor" />
   </MasterDetailPage.Detail>
 
 </MasterDetailPage>

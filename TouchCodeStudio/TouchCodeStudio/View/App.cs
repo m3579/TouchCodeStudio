@@ -5,6 +5,8 @@ using System.Text;
 
 using Xamarin.Forms;
 
+using TouchCodeStudio.View;
+
 namespace TouchCodeStudio
 {
     public class App : Application
