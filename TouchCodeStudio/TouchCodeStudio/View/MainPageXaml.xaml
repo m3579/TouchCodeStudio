@@ -6,11 +6,15 @@
   x:Class="TouchCodeStudio.MainPageXaml">
   
   <MasterDetailPage.Master>
-    
+    <local:FileExplorerPage x:Name="fileExplorerPage" />  
   </MasterDetailPage.Master>
   
   <MasterDetailPage.Detail>
-    
+    <NavigationPage>
+      <x:Arguments>
+        <local:EditorPage />
+      </x:Arguments>
+    </NavigationPage>
   </MasterDetailPage.Detail>
 
 </MasterDetailPage>
